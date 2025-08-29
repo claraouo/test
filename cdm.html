@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hover Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: transparent;
+    }
+    .image-container {
+      position: relative;
+      width: 300px;
+      height: auto;
+      overflow: hidden;
+    }
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: opacity 0.4s ease;
+    }
+    .grayscale-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+    }
+    .color-image {
+      opacity: 0;
+    }
+    .image-container:hover .grayscale-image {
+      opacity: 0;
+    }
+    .image-container:hover .color-image {
+      opacity: 1;
+    }
+    .link-wrapper {
+      text-decoration: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<a href="https://sites.google.com/d/1gQfEdD7DGc2TrgPORmPuEd6Mwjgr7oDD/p/1bIEWiby_4OSFdbcql5lHJsxhOfG8y9p8/edit" class="link-wrapper">
+  <div class="image-container">
+    <img src="https://res.cloudinary.com/dslyfvqvj/image/upload/v1756451404/Group_2_3_bzhfrs.png" alt="Grayscale Image" class="grayscale-image">
+    <img src="https://res.cloudinary.com/dslyfvqvj/image/upload/v1756451417/Group_2_2_ed1tvr.png" alt="Color Image" class="color-image">
+  </div>
+</a>
+
+</body>
+</html>
